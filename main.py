@@ -19,7 +19,7 @@ def main():
     soup = BeautifulSoup(info.text, "html.parser")
 
     console.print(f"[bold red]{soup.find_all('a')}")
-    console.print(f"[green]{soup.title.text}")
+    console.print(f"[green]{soup.title.string}")
 
 
 if __name__ == "__main__":
